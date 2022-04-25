@@ -41,8 +41,8 @@ jobs:
       - name: Upload coverage report
         uses: BetaHuhn/do-spaces-action@v2
         with:
-          access_key: ${{ secrets.ACCESS_KEY }}
-          secret_key: ${{ secrets.SECRET_KEY }}
+          access_key: ${{ secrets.S3_ACCESS_KEY }}
+          secret_key: ${{ secrets.S3_SECRET_KEY }}
           space_name: yumin
           space_region: sgp1
           source: target/site/jacoco
